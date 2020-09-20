@@ -35,10 +35,10 @@ export class HomePage implements OnInit {
   }
 
   getMovies() {
-    return this.http.get(this.apiService.getNowPlayingURL);
+    return this.http.get(this.apiService.getPopularURL);
   }
 
-  getItem(id: number) {
-    console.log('押した' + id);
+  getItem(movie) {
+    console.log('押した' + movie.title);
   }
 }

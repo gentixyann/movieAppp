@@ -19,7 +19,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-card *ngFor="let movie of list" class="ion-padding-top" (click)="getItem(movie.id)" >
+        <ion-card *ngFor="let movie of list" class="ion-padding-top" (click)="getItem(movie)" >
           <div class="ion-text-center">
             <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{movie.poster_path}}" />
           </div>

@@ -8,5 +8,7 @@ export class ApiService {
   // 最後に &language=ja をつけると日本語に
   getNowPlayingURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${this.apiKey}`;
 
+  getPopularURL = `https://api.themoviedb.org/3/movie/popular?api_key=${this.apiKey}&page=1`;
+
   constructor() { }
 }
