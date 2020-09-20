@@ -9,7 +9,6 @@ import { ApiService } from '../service/api.service';
 })
 export class FirstRegisterPage implements OnInit {
   query: string;
-  // searchURL = `https://api.themoviedb.org/3/search/movie?api_key=${this.apiService.apiKey}&query=Jack+Reacher`;
   movies: any[];
   isTapped = false;
 
@@ -33,9 +32,9 @@ export class FirstRegisterPage implements OnInit {
     }
   }
 
-  itemTap() {
+  itemTap(movie) {
     this.isTapped = true;
-    console.log('押された');
+    console.log('押された' + movie.title);
   }
 
 }
