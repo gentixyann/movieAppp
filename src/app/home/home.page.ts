@@ -37,4 +37,8 @@ export class HomePage implements OnInit {
   getMovies() {
     return this.http.get(this.apiService.getNowPlayingURL);
   }
+
+  getItem() {
+    console.log('押した');
+  }
 }
