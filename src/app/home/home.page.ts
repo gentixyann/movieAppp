@@ -38,7 +38,7 @@ export class HomePage implements OnInit {
     return this.http.get(this.apiService.getNowPlayingURL);
   }
 
-  getItem() {
-    console.log('押した');
+  getItem(id: number) {
+    console.log('押した' + id);
   }
 }
